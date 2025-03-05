@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inscription</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    </head>
+    <body>
+        <h1>Bienvenue !</h1>
+        <div class="signup-container">
+            <h2>Inscription</h2>
+            <form action="register.php" method="POST" onsubmit="validateForm(event)">
+                <div class="input-group">
+                    <input type="text" name="first_name" placeholder="Prénom" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="last_name" placeholder="Nom" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="adresse email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder="mot de passe" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirm-password" name="confirm_password" placeholder="confirmer le mot de passe" required>
+                </div>
+                <div class="toggle-password">
+                    <input type="checkbox" onclick="togglePassword()">
+                    <label>Afficher le mot de passe</label>
+                </div>
+                <button type="submit" class="submit-btn">S'inscrire</button>
+            </form>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

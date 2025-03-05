@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan';
+}
+
+body {
+    background-color: #FFF9D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    color: #4F3D2D;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.login-container {
+    background: #8B7765;
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+}
+
+.login-container h2 {
+    color: #FFF9D6;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.login-container p {
+    color: #FFF9D6;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.login-container a {
+    color: #FFF9D6;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.input-group {
+    margin: 10px 0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #FFF9D6;
+    font-size: 14px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #FFF9D6;
+    font-size: 14px;
+}
+
+.remember-me input {
+    margin-right: 8px;
+}
+
+.submit-btn {
+    margin-top: 15px;
+    background-color: #FFF9D6;
+    color: #8B7765;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    width: 55%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-container {
+    background-color: #8B7765;
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+}
+
+.signup-container h2 {
+    color: #FFF9D6;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.signup-container p {
+    color: #FFF9D6;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.toggle-password {
+    display: flex;
+    align-items: center;
+    color: #FFF9D6;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.toggle-password input {
+    margin-right: 8px;
+}
+

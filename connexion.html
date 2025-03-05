@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Connexion</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Vous êtes de retour !</h1>
+        <div class="login-container">
+            <h2>Connexion</h2>
+            <p>Pas encore inscrit ? <a href="inscription.html">Inscrivez-vous ici !</a></p>
+            <form action="/submit-login" method="POST">
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="adresse mail" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="mot de passe" required>
+                </div>
+                <p><a href="#">Mot de passe oublié ?</a></p>
+                <div class="remember-me">
+                    <input type="checkbox" id="remeber" name="remeber">
+                    <label for="remember">Se souvenir de moi</label>
+                </div>
+                <button type="submit" class="submit-btn">Se connecter</button>
+            </form>
+            
+        </div>
+    </body>
+</html>

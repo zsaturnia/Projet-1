@@ -1,0 +1,276 @@
+body {
+    background-color: rgb(253, 255, 236);
+    padding-top: 60px;
+}
+nav {
+    background-color: beige;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav p {
+    margin: 0;
+    padding: 0;
+    position:relative;
+    display: flex;
+    justify-content: center;
+}
+
+nav p a {
+    text-decoration: none;
+    font-family: "League Spartan";
+    font-size: 20px;
+    color:rgb(48, 28, 7);
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav p a:hover {
+    color: rgb(190, 174, 153);
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: rgb(48, 28, 7);
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(190, 174, 153);
+}
+
+section {
+    margin: 40px 0;
+}
+
+
+#accueil {
+    background-color: white;
+}
+.models  {
+    display: flex;
+    justify-content: center;
+    gap: 45px; 
+    margin: 25px;
+    position: relative;
+}
+
+.models img {
+    width: 250px; 
+    height: 370px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: block;
+}
+
+
+.models:hover img {
+    opacity: 0.5;
+}
+
+.models:hover .overlay{
+    opacity: 0.5;
+}
+
+.models a:hover::after{
+    opacity: 1;
+}
+
+.models a:hover img {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.models a {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.models a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ 
+
+    transition: opacity 0.3s ease;
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.models a:hover .overlay {
+    opacity: 1;
+}
+
+@media screen and (max-width:768px) {
+    .models {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .models img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.hoodies {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 25px;
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.hoodies img {
+    width: 250px;
+    height: 370px;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.hoodies img:hover {
+    opacity: 1;
+    transform: scale(1.13);
+}
+
+p {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+#about {
+    background-color: #877465;
+    padding: 50px 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.cercle {
+    background-color: #F4EEC5;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-top: 50px;
+    padding-right: 20px;
+    font-family: 'League Spartan'
+}
+
+.cercle h1{
+    font-size: 5.5rem;
+    color: #1D1D1B;
+    font-weight: bolder;
+    padding-top: 30px;
+    padding-left: 150px;
+}
+
+.cercle h1 span {
+    font-weight: bolder;
+}
+
+.nom-marque {
+    font-size: 0.9rem;
+    color: #1D1D1B;
+    margin-top: 15px;
+}
+
+.right {
+    width: 40%;
+    color: #F4EEC5;
+    text-align: left;
+    padding-left:100px;
+    align-items: right;
+}
+
+.right h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1D1D1B;
+    font-family: 'Montserrat';
+}
+
+.right ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+.right li {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #D9D3C2;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .cercle {
+        width: 280px;
+        height: 280px;
+        padding: 20px;
+    }
+    .cercle h1 {
+        font-size: 2.5rem;
+    }
+
+    .right h2 {
+        font-size: 1.5rem;
+    }
+
+    .right li{
+        font-size: 1rem;
+    }
+}
